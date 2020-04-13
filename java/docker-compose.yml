@@ -3,3 +3,4 @@ services:
   centos8:
     container_name: "centos8_java"
     build: ./
+    tty: true
