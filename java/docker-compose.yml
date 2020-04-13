@@ -3,4 +3,16 @@ services:
   centos8:
     container_name: "centos8_java"
     build: ./
+    ports:
+      - 8080:80
     tty: true
+
+  mysql:
+    image: mysql:5.7
+    container_name: mysql57_test
+    restart: always
+    ports:
+      - 13306:3306 
+    tty: true
+    environment:
+      MYSQL_ROOT_PASSWORD: my-secret-pw「
