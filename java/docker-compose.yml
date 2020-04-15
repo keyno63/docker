@@ -15,7 +15,10 @@ services:
       - 13306:3306 
     tty: true
     environment:
-      MYSQL_ROOT_PASSWORD: my-secret-pw「
+      MYSQL_DATABASE: sample_db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user_pass
+      MYSQL_ROOT_PASSWORD: root_pass
 
   postgres:
     image: postgres:11-alpine
