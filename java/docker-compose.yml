@@ -17,6 +17,7 @@ services:
     environment:
       MYSQL_DATABASE: sample_db
       MYSQL_USER: user
+      MYSQL_ROOT: root
       MYSQL_PASSWORD: user_pass
       MYSQL_ROOT_PASSWORD: root_pass
 
